@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G9016" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Tableview1" representedClassName="Tableview1" syncable="YES">
+        <attribute name="country_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="map" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tableview2" inverseName="map2" inverseEntity="Tableview2" syncable="YES"/>
+    </entity>
+    <entity name="Tableview2" representedClassName="Tableview2" syncable="YES">
+        <attribute name="division_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="map2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tableview1" inverseName="map" inverseEntity="Tableview1" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tableview1" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Tableview2" positionX="167" positionY="-5" width="128" height="75"/>
+    </elements>
+</model>
